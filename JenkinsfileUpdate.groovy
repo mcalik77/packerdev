@@ -58,11 +58,7 @@ pipeline{
                 }
             }
         }
-        stage("Pull Repo"){
-            steps{
-                git("https://github.com/mcalik77/packerdev.git")
-            }
-        }
+    
         stage("Build Image"){
             steps{
                 // sh "packer build updated/updated.json"
