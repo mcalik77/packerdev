@@ -62,10 +62,10 @@ pipeline{
             steps{
                 script{
                     def AMI
-                    if (${REGION} == "us-east-1"){
+                    if (REGION == "us-east-1"){
                     AMI = "ami-0b898040803850657"
                     }
-                    else if  (${REGION} == "us-east-2"){
+                    else if  (REGION == "us-east-2"){
                     AMI = "ami-0d8f6eb4f641ef691"
                     }
                 }
